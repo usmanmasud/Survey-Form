@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
-  </head>
-  <body>
+    <title>Survey Form</title>
+</head>
+<body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Please help us fill the survey form for us to serve you well . Thank you!!</p>
-  <div class="container">
-    <form id="survey-form" action="#">
-      <label id="name-label"> Name
-        <input type="text" id="name" placeholder="Enter your name" required>
-        </label>
-      <label id="email-label">Email
-      <input type="email" id="email" placeholder="enter your email" required> 
-      </label>
-      <label id="number-label"> Age
-      <input type="number" id="number" placeholder="age" min="13" max="120">
-      </label>
-      <label>Qualification/Certification
-      <select id="dropdown">
-        <option>Choose one</option>
-        <option>Secondary/High School</option>
-        <option>NCE or diploma</option>
-        <option>Bachelors degree</option>
-        <option>Masters degree</option>
-        <option>Phd</option>
-        <option>No Formal Edaction</option>
-      </select>
-      </label>
+    <p id="description">Please help us fill the survey form for us to serve you well. Thank you!</p>
+    <div class="container">
+        <form id="survey-form" action="#">
+            <label for="name" id="name-label"> Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label"> Age
+                <input type="number" id="number" placeholder="Age" min="13" max="120">
+            </label>
+            <label for="dropdown">Qualification/Certification
+                <select id="dropdown">
+                    <option>Choose one</option>
+                    <option>Secondary/High School</option>
+                    <option>NCE or diploma</option>
+                    <option>Bachelors degree</option>
+                    <option>Masters degree</option>
+                    <option>PhD</option>
+                    <option>No Formal Education</option>
+                </select>
+            </label>
 
-     <p id="employment-status">Are You Currently Employed?</p>
-      <label id="employment-choice"><input type="radio" name="radio"> Yes</label>  
-      <label><input type="radio" name="radio"> No</label> 
-      <p>Choose Your Course Of Interest</p>
-      <label id="course-label"><input type="checkbox" value="checkbox"> Web Development</label>
-      <label id="course-label"><input type="checkbox" value="checkbox"> Data Science</label>
-      <label id="course-label"><input type="checkbox" value="checkbox"> UI/UX Design/</label>
-      <label id="course-label"><input type="checkbox" value="checkbox"> Python</label>
-      <p>Why Are You Interested IN The Course Selected?</p>
-      <textarea placeholder="Enter your response..." min="200" id="textarea"></textarea>
-      
-      <input type="submit" value="Submit" id="submit">
-    </form>
+            <p id="employment-status">Are You Currently Employed?</p>
+            <label for="employed-yes"><input type="radio" id="employed-yes" name="employment-status" value="yes"> Yes</label>
+            <label for="employed-no"><input type="radio" id="employed-no" name="employment-status" value="no"> No</label>
+
+            <p>Choose Your Course Of Interest</p>
+            <label class="course-label"><input type="checkbox" name="course" value="Web Development"> Web Development</label>
+            <label class="course-label"><input type="checkbox" name="course" value="Data Science"> Data Science</label>
+            <label class="course-label"><input type="checkbox" name="course" value="UI/UX Design"> UI/UX Design</label>
+            <label class="course-label"><input type="checkbox" name="course" value="Python"> Python</label>
+
+            <p>Why Are You Interested In The Course Selected?</p>
+            <textarea placeholder="Enter your response..." id="textarea"></textarea>
+            
+            <input type="submit" value="Submit" id="submit">
+        </form>
     </div>
-  </body>
+</body>
 </html>
